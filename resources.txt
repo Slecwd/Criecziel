@@ -1,9 +1,12 @@
 
-Web dev learning path (comes with a handful of learning resources)
+Web dev resources (article, reference)
 	https://github.com/andrews1022/web-development-2020-course-list
 
-List of properties that can be animated
+List of properties that can be animated (reference)
 	https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
 
-Understand closures
+Understand closures (article)
 	https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8
+	
+Eloquent JavaScript (book)
+	https://eloquentjavascript.net/
