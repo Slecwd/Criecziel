@@ -1,7 +1,5 @@
 <h1>This is the readme.</h1>
 
-This is just a test.
-
-<h3>Does this even work</h3>
-
-<h5>(yes it does)</h5>
+<body style="background-color:#c9c9c9;">
+  Hi
+</body>
