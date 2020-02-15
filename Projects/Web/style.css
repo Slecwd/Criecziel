@@ -1,0 +1,120 @@
+body
+{
+	margin:0;
+	overflow: hidden;
+	background-color: #c4c4c4;
+
+	min-width:500px;
+}
+
+.main-flex
+{
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.container
+{
+	flex-grow: 1;
+	width: 100vw;
+	text-align: center;
+
+	background-size: cover;
+	background-position: center;
+	background-attachment: contain;
+}
+
+.text-container
+{
+	height: 100%;
+	max-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.prev-text
+{
+	height: 100%;
+	display: flex;
+	align-items: center;
+
+	font-family: Cambria;
+	font-size: 2.5rem;
+	color: #111;
+
+	opacity: 1;
+	
+	transition-property: opacity, transform;
+	transition-duration: 1s, 1s;
+	-webkit-transition-property: opacity, transform;
+	-webkit-transition-duration: 1s, 1s;
+}
+
+.prev-text.expanded
+{
+	opacity: 0;
+	transform: translate(150px, 0);
+
+	transition-property: opacity, transform;
+	transition-duration: 0.5s, 1s;
+	-webkit-transition-property: opacity, transform;
+	-webkit-transition-duration: 0.5s, 1s;
+}
+
+.p-text
+{
+	position: absolute;
+	opacity: 0;
+	min-width: 50vw;
+	max-width: 90vw;
+	
+	height: 8rem;
+	display: flex;
+	align-items: center;
+
+	font-family: Cambria;
+	font-size: 1.2rem;
+	color: #202020;
+
+	transform: translate(-150px, 0);
+
+	transition-property: opacity, transform;
+	transition-duration: 0.5s, 1s;
+	-webkit-transition-property: opacity, transform;
+	-webkit-transition-duration: 0.5s, 1s;
+}
+
+.p-text.expanded
+{
+	opacity: 1;
+	transform: translate(0, 0);
+
+	transition-property: opacity, transform;
+	transition-duration: 1s, 1s;
+	-webkit-transition-property: opacity, transform;
+	-webkit-transition-duration: 1s, 1s;
+}
+
+.container:nth-child(1)
+{
+	/*background-image: url("https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	*/
+	background-color:#a7a;
+}
+.container:nth-child(2)
+{
+	/*
+	background-image: url("https://images.pexels.com/photos/355465/pexels-photo-355465.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+	*/
+	background-color:#77a;
+}
+.container:nth-child(3)
+{
+	/*
+	background-image: url("https://images.pexels.com/photos/21008/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+	*/
+	background-color:#7a7;
+}
