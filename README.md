@@ -1,5 +1,5 @@
 <h1>This is the readme.</h1>
 
-<body style="background-color:cyan">
+<body style="color:cyan">
   Hi
 </body>
