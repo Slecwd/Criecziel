@@ -1,0 +1,66 @@
+body
+{
+	background-color: #f0f0f0;
+	margin: 0;
+	font-family: 'Consolas';
+}
+
+h1
+{
+	text-align: center;
+	margin: 0;
+	margin-bottom: 50px;
+	margin-top: 10px;
+	padding: 20px;
+	background: #c9c9c9;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+
+}
+
+.main-flex
+{
+	display: flex;
+	flex-direction: column;
+	width: 70vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.entry
+{
+	display: grid;
+	grid-template-columns: 20% 10% 10% 20% 40%;
+	padding: 3px;
+}
+
+
+.entry > span
+{
+	width: 180px;
+	min-height: 30px;
+	display: grid;
+	align-items:center;
+	padding-left: 10px;
+	box-sizing: border-box;
+
+	word-break: keep-all;
+	overflow-wrap: anywhere;
+}
+
+.entry:nth-child(even)
+{
+	background-color: #e8e8e8;
+}
+.entry:nth-child(odd)
+{
+	background-color: #c8c8c8;
+}
+
+.entry:first-child
+{
+	color: #f4f4f4;
+	background: #111;
+}
