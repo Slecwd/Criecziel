@@ -1,30 +1,33 @@
-"entries":[
-	{
-		"name"		:	"JSON",
-		"concept"	:	10,
-		"practice"	:	5,
-		"date"		:	"Feb 14, 2020",
-		"notes"		:	"Learned from https://www.youtube.com/watch?v=wI1CWzNtE-M"
-	},
-	{
-		"name"		:	"CSS",
-		"concept"	:	10,
-		"practice"	:	10,
-		"date"		:	"",
-		"notes"		:	""
-	},
-	{
-		"name"		:	"HTML",
-		"concept"	:	10,
-		"practice"	:	10,
-		"date"		:	"",
-		"notes"		:	""
-	},
-	{
-		"name"		:	"Vanilla JS",
-		"concept"	:	10,
-		"practice"	:	10,
-		"date"		:	"",
-		"notes"		:	""
-	}
-]
+{
+	"entries":[
+		{
+			"name"		:	"JSON",
+			"concept"	:	10,
+			"practice"	:	5,
+			"date"		:	"Feb 14 2020",
+			"notes"		:	"Learned from https://www.youtube.com/watch?v=wI1CWzNtE-M"
+		},
+		{
+			"name"		:	"CSS",
+			"concept"	:	10,
+			"practice"	:	10,
+			"date"		:	" ",
+			"notes"		:	" "
+		},
+		{
+			"name"		:	"HTML",
+			"concept"	:	10,
+			"practice"	:	10,
+			"date"		:	" ",
+			"notes"		:	" "
+		},
+		{
+			"name"		:	"Vanilla JS",
+			"concept"	:	10,
+			"practice"	:	10,
+			"date"		:	" ",
+			"notes"		:	" "
+		}
+		
+	]
+}

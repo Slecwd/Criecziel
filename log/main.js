@@ -9,11 +9,27 @@ xhttp.onreadystatechange = function()
 {
 	if (this.readyState == 4 && this.status == 200)
 	{
-		var response = JSON.parse(xhttp.responseText);
-		console.log(xttp.responseText);
+		var data = JSON.parse(xhttp.responseText);
+
+
+		for(entry of data.entries)
+		{
+			var newEntry = document.createElement("div");
+			newEntry.classList.add("entry");
+			newEntry.innerHTML = `
+				<span>${entry.name}</span>
+				<span>${entry.concept}</span>
+				<span>${entry.practice}</span>
+				<span>${entry.date}</span>
+				<span>${entry.notes}</span>`;
+
+			mainFlex.appendChild(newEntry);
+
+			console.log(mainFlex);
+		}
 	}
 };
-xhttp.open("GET", "data.json", true);
+xhttp.open("GET", "log/data.json", true);
 xhttp.send();
 
 
