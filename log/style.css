@@ -27,13 +27,31 @@ h1
 	width: 70vw;
 	margin-left: auto;
 	margin-right: auto;
+
+	
+	overflow-x: scroll;
 }
+
+
+.main-flex, .header-title
+{
+	transition: width 0.05s linear;
+}
+.main-flex.expanded, .header-title.expanded
+{
+	transition: width 0.05s linear;
+	width:95vw;
+	margin-left: auto;	margin-right: auto;
+}
+
 
 .entry
 {
 	display: grid;
 	grid-template-columns: 20% 10% 10% 20% 40%;
 	padding: 3px;
+
+	min-width: 800px;
 }
 
 
@@ -41,6 +59,7 @@ h1
 {
 	width: 180px;
 	min-height: 30px;
+
 	display: grid;
 	align-items:center;
 	padding-left: 10px;
@@ -48,6 +67,11 @@ h1
 
 	word-break: keep-all;
 	overflow-wrap: anywhere;
+}
+
+.entry > input
+{
+	margin: 2px;
 }
 
 .entry:nth-child(even)
