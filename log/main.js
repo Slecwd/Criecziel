@@ -4,6 +4,7 @@ var entries = document.querySelectorAll(".entry");
 var lastEntry = document.querySelector(".entry:last-child");
 
 
+// Read data from log/data.json and deploy it
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function()
 {
@@ -12,26 +13,26 @@ xhttp.onreadystatechange = function()
 		var data = JSON.parse(xhttp.responseText);
 		for(entry of data.entries)
 		{
-			var newEntry = document.createElement("div");
+			// Create the new entry
+			var newEntry = document.createElement("div"); 
 			newEntry.classList.add("entry");
+			
+			// Write the entry's HTML
 			newEntry.innerHTML = `
 				<span>${entry.name}</span>
 				<span>${entry.concept}</span>
 				<span>${entry.practice}</span>
-				<span>${entry.date}</span>
 				<span>${entry.notes}</span>`;
 
+			// Highlight the words 'done' and 'todo'
 			newEntry.innerHTML = newEntry.innerHTML.replace(/done/g,
-				"<div style=\"color:#7F7\">done</div>");
+				"<label style=\"color:#7F7\">done</label>");
 
 			newEntry.innerHTML = newEntry.innerHTML.replace(/todo/g,
-				"<div style=\"color:#F77\">todo</div>");
+				"<span style=\"color:#F77\">todo</span>");
 
-			console.log(newEntry.innerHTML);
-
+			// Insert the entry at the top of the table
 			mainFlex.insertBefore(newEntry, mainFlex.children[1]);
-
-			console.log(mainFlex);
 		}
 	}
 };

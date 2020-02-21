@@ -3,6 +3,7 @@ body
 	background-color: #272822;
 	margin: 0;
 	font-family: 'Consolas';
+	font-size: 16px;
 
 	width: 1000px;
 	margin-left: auto;
@@ -50,6 +51,7 @@ h1
 	display: flex;
 	padding: 3px;
 	min-width: 800px;
+	flex-wrap: wrap;
 }
 
 
@@ -58,7 +60,7 @@ h1
 	width: 180px;
 	min-height: 30px;
 
-	display: grid;
+	display: flex;
 	align-items:center;
 	padding-left: 10px;
 	box-sizing: border-box;
@@ -66,16 +68,24 @@ h1
 	word-break: keep-all;
 	overflow-wrap: anywhere;
 }
+.entry > span:nth-child(1),
 .entry > span:nth-child(2),
-.entry > span:nth-child(3),
-.entry > span:nth-child(4)
+.entry > span:nth-child(3)
 {
 	width: 100px;
 }
-.entry > span:last-child,
-.entry > span:first-child
+.entry > span:first-child,
+.entry > span:nth-child(4)
 {
 	flex-grow: 1;
+}
+.entry > span:nth-child(4)
+{
+	font-size: 13px;
+}
+.entry:first-child > span:nth-child(4)
+{
+	font-size: 16px;
 }
 
 .entry:nth-child(even)

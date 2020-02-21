@@ -4,51 +4,55 @@
 			"name"		:	"HTML",
 			"concept"	:	"done",
 			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	""
 		},
 		{
 			"name"		:	"CSS",
 			"concept"	:	"done",
 			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	""
 		},
 		{
 			"name"		:	"Vanilla JS",
 			"concept"	:	"done",
 			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
-		},
-		{
-			"name"		:	"JSON",
-			"concept"	:	"done",
-			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	"Closures, Destructuring, DOM stuff, JSON, ES6 stuff"
 		},
 		{
 			"name"		:	"Git",
 			"concept"	:	"done",
 			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	""
 		},
 		{
-			"name"		:	"Vim (general usage, some vimscript)",
+			"name"		:	"Vim",
 			"concept"	:	"done",
 			"practice"	:	"done",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	"General usage, some vimscript"
 		},
 		{
 			"name"		:	"Big O notation",
 			"concept"	:	"done",
 			"practice"	:	"none",
-			"date"		:	" ",
-			"notes"		:	" "
+			"notes"		:	""
+		},
+		{
+			"name"		:	"Angular (todo)",
+			"concept"	:	" ",
+			"practice"	:	" ",
+			"notes"		:	""
+		},
+		{
+			"name"		:	"Node.js (todo)",
+			"concept"	:	" ",
+			"practice"	:	" ",
+			"notes"		:	""
+		},
+		{
+			"name"		:	"Express.js (todo)",
+			"concept"	:	" ",
+			"practice"	:	" ",
+			"notes"		:	""
 		}
-		
 	]
 }
