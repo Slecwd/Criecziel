@@ -10,8 +10,6 @@ xhttp.onreadystatechange = function()
 	if (this.readyState == 4 && this.status == 200)
 	{
 		var data = JSON.parse(xhttp.responseText);
-
-
 		for(entry of data.entries)
 		{
 			var newEntry = document.createElement("div");
@@ -23,7 +21,15 @@ xhttp.onreadystatechange = function()
 				<span>${entry.date}</span>
 				<span>${entry.notes}</span>`;
 
-			mainFlex.appendChild(newEntry);
+			newEntry.innerHTML = newEntry.innerHTML.replace(/done/g,
+				"<div style=\"color:green\">done</div>");
+
+			newEntry.innerHTML = newEntry.innerHTML.replace(/todo/g,
+				"<div style=\"color:red\">todo</div>");
+
+			console.log(newEntry.innerHTML);
+
+			mainFlex.insertBefore(newEntry, mainFlex.children[1]);
 
 			console.log(mainFlex);
 		}
@@ -39,10 +45,11 @@ let minOptimalPageWidth = 800;
 
 function updateMargins()
 {
-	if(document.body.clientWidth <= minOptimalPageWidth)
+	if(document.body.clientWidth < 800)
 	{
 		mainFlex.classList.add("expanded");
 		header.classList.add("expanded");
+		console.log(mainFlex.width);
 	}
 	else
 	{

@@ -1,30 +1,44 @@
 {
 	"entries":[
 		{
-			"name"		:	"JSON",
-			"concept"	:	10,
-			"practice"	:	5,
-			"date"		:	"Feb 14 2020",
-			"notes"		:	"Learned from https://www.youtube.com/watch?v=wI1CWzNtE-M"
-		},
-		{
-			"name"		:	"CSS",
-			"concept"	:	10,
-			"practice"	:	10,
+			"name"		:	"HTML",
+			"concept"	:	"done",
+			"practice"	:	"done",
 			"date"		:	" ",
 			"notes"		:	" "
 		},
 		{
-			"name"		:	"HTML",
-			"concept"	:	10,
-			"practice"	:	10,
+			"name"		:	"CSS",
+			"concept"	:	"done",
+			"practice"	:	"done",
 			"date"		:	" ",
 			"notes"		:	" "
 		},
 		{
 			"name"		:	"Vanilla JS",
-			"concept"	:	10,
-			"practice"	:	10,
+			"concept"	:	"done",
+			"practice"	:	"done",
+			"date"		:	" ",
+			"notes"		:	" "
+		},
+		{
+			"name"		:	"JSON",
+			"concept"	:	"done",
+			"practice"	:	"done",
+			"date"		:	"Feb 14 2020",
+			"notes"		:	" "
+		},
+		{
+			"name"		:	"Git",
+			"concept"	:	"done",
+			"practice"	:	"done",
+			"date"		:	" ",
+			"notes"		:	" "
+		},
+		{
+			"name"		:	"Vim (general usage, some vimscript)",
+			"concept"	:	"done",
+			"practice"	:	"done",
 			"date"		:	" ",
 			"notes"		:	" "
 		}

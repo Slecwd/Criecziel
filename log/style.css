@@ -3,6 +3,12 @@ body
 	background-color: #f0f0f0;
 	margin: 0;
 	font-family: 'Consolas';
+
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+
+	overflow-x: scroll;
 }
 
 h1
@@ -13,23 +19,14 @@ h1
 	margin-top: 10px;
 	padding: 20px;
 	background: #c9c9c9;
-	width: 70vw;
-	margin-left: auto;
-	margin-right: auto;
 	box-sizing: border-box;
-
 }
 
 .main-flex
 {
 	display: flex;
 	flex-direction: column;
-	width: 70vw;
-	margin-left: auto;
-	margin-right: auto;
-
-	
-	overflow-x: scroll;
+	width: 100%;
 }
 
 
@@ -40,15 +37,19 @@ h1
 .main-flex.expanded, .header-title.expanded
 {
 	transition: width 0.05s linear;
-	width:95vw;
-	margin-left: auto;	margin-right: auto;
+	width:100vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
 .entry
 {
+	/*
 	display: grid;
-	grid-template-columns: 20% 10% 10% 20% 40%;
+	grid-template-columns: auto 30px 30px auto auto;
+	*/
+	display: flex;
 	padding: 3px;
 
 	min-width: 800px;
@@ -67,6 +68,19 @@ h1
 
 	word-break: keep-all;
 	overflow-wrap: anywhere;
+}
+.entry > span:nth-child(2),
+.entry > span:nth-child(3)
+{
+	width: 100px;
+}
+.entry > span:last-child
+{
+	flex-grow: 1;
+}
+.entry > span:first-child
+{
+	flex-grow: 1;
 }
 
 .entry > input
