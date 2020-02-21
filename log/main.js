@@ -22,10 +22,10 @@ xhttp.onreadystatechange = function()
 				<span>${entry.notes}</span>`;
 
 			newEntry.innerHTML = newEntry.innerHTML.replace(/done/g,
-				"<div style=\"color:green\">done</div>");
+				"<div style=\"color:#7F7\">done</div>");
 
 			newEntry.innerHTML = newEntry.innerHTML.replace(/todo/g,
-				"<div style=\"color:red\">todo</div>");
+				"<div style=\"color:#F77\">todo</div>");
 
 			console.log(newEntry.innerHTML);
 
