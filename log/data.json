@@ -37,6 +37,18 @@
 			"notes"		:	""
 		},
 		{
+			"name"		:	"Model-view-controller",
+			"concept"	:	"done",
+			"practice"	:	"none",
+			"notes"		:	""
+		},
+		{
+			"name"		:	"HTTP",
+			"concept"	:	"done",
+			"practice"	:	"none",
+			"notes"		:	""
+		},
+		{
 			"name"		:	"Angular (todo)",
 			"concept"	:	" ",
 			"practice"	:	" ",
@@ -44,12 +56,6 @@
 		},
 		{
 			"name"		:	"Node.js (todo)",
-			"concept"	:	" ",
-			"practice"	:	" ",
-			"notes"		:	""
-		},
-		{
-			"name"		:	"Express.js (todo)",
 			"concept"	:	" ",
 			"practice"	:	" ",
 			"notes"		:	""
